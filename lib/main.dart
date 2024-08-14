@@ -8,9 +8,9 @@ void main() {
         backgroundColor: Colors.red[400],
         appBar: AppBar(
           backgroundColor: Colors.red[600],
-          title: Center(child: Text('DICEE')),
+          title: const Center(child: Text('DICEE')),
         ),
-        body: dice(),
+        body: const dice(),
       ),
     ),
   );
@@ -50,7 +50,7 @@ class _diceState extends State<dice> {
               child: Image.asset('images/dice$num.png'),
             ),
           ),
-          SizedBox(width: 10,),
+          const SizedBox(width: 10,),
           Expanded(
             child: TextButton(
               onPressed: () {
